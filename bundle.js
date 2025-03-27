@@ -3745,7 +3745,7 @@ function onChanged() {
   let selection = dropdown.options[dropdown.selectedIndex].text;
   //creating the link that will be used for requesting data
   selection = selection.split(",", 1) + ",CA";
-  let requestLink = "http://api.openweathermap.org/data/2.5/weather?q=" + selection + "&appid=70c5ca3995d966b0a3881fa21cfc4de5";
+  let requestLink = "https://api.openweathermap.org/data/2.5/weather?q=" + selection + "&appid=70c5ca3995d966b0a3881fa21cfc4de5";
 
   //sending request to update data
   sendRequest(requestLink);
