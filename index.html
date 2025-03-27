@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_Weather Reporter</title>
+    <link rel="stylesheet" href="./bundle.css">
+    <script defer src="bundle.js"></script>
+</head>
+
+
+<body class="g-base">
+    <div class="g-loading-overlay"></div>
+    <div id="p-weather">
+
+        <div class="g-head">
+            <div class="g-title">_Weather Reporter</div>
+            <div class="g-project">Client Side Programming Project I (Version 1.0)</div>
+        </div>
+
+        <div id="s-info">Select a Canadian city to see the current weather report:</div>
+        <select id="dropdown"></select>
+
+        <div id="s-header-area">
+        </div>
+
+        <div id="s-content-area">
+
+            <div id="s-temp-area">
+                <span class="section-header"><i class="wi wi-thermometer"></i>&nbsp;&nbsp;Temperature</span>
+                <div id="temperature">
+                </div>
+            </div>
+
+            <div id="s-visibility-area">
+                <span class="section-header"><i class="wi wi-day-haze"></i>&nbsp;&nbsp;Visibility</span>
+                <div id="visibility">
+                </div>
+            </div>
+
+            <div id="s-humidity-area">
+                <span class="section-header"><i class="wi wi-humidity"></i>&nbsp;&nbsp;Humidity</span>
+                <div id="humidity">
+                </div>
+            </div>
+
+            <div id="s-pressure-area">
+                <span class="section-header"><i class="wi wi-barometer"></i>&nbsp;&nbsp;Air Pressure</span>
+                <div id="pressure">
+                </div>
+            </div>
+
+            <div id="s-wind-area">
+                <span class="section-header"><i id="wind-icon"></i>&nbsp;&nbsp;Wind</span>
+                <div id="wind">
+                </div>
+            </div>
+        </div>
+
+        <div id="s-credits">
+            Powered by <a href="https://openweathermap.org/">openweathermap</a> | <a
+                href="http://erikflowers.github.io/weather-icons/">weather-icons</a>
+        </div>
+    </div>
+</body>
+
+</html>
