@@ -3798,13 +3798,11 @@ function setupDropdown(lastSelected) {
 function sendRequest(source) {
   //getting weather data as json
   fetch(source).then(function (response) {
-    console.log(response);
     return response.json();
   }).then(function (data) {
     //passing weather data to the function that displays it
     setupContent(data);
   }).catch(function (error) {
-    console.log("error has occured. \n" + error.message);
     setupContent("error");
     // throw error;
   });
